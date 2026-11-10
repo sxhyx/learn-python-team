@@ -28,6 +28,23 @@ def test_if_statement():
     assert conclusion == 'Number bigger than or equal to one'
 
 
+def test_nested_if():
+    """nested IF statements"""
+
+    number = 12
+    result = ''
+
+    if number > 0:
+        if number % 2 == 0:
+            result = 'Positive even number'
+        else:
+            result = 'Positive odd number'
+    else:
+        result = 'Number is not positive'
+
+    assert result == 'Positive even number'
+
+
 def test_multiple_elif():
     """multiple ELIF statements"""
 
